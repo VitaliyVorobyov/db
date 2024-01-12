@@ -1,10 +1,10 @@
 CREATE TABLE genres (
-  genre_id INT PRIMARY KEY,
+  genre_id SERIAL PRIMARY KEY,
   genre_name VARCHAR(255)
 );
 
 CREATE TABLE artists (
-  artist_id INT PRIMARY KEY,
+  artist_id SERIAL PRIMARY KEY,
   artist_name VARCHAR(255)
 );
 
@@ -16,13 +16,13 @@ CREATE TABLE artists_genres (
 );
 
 CREATE TABLE albums (
-  album_id INT PRIMARY KEY,
+  album_id SERIAL PRIMARY KEY,
   album_name VARCHAR(255),
   release_year INT
 );
 
 CREATE TABLE tracks (
-  track_id INT PRIMARY KEY,
+  track_id SERIAL PRIMARY KEY,
   track_name VARCHAR(255),
   duration INT,
   album_id INT,
@@ -30,7 +30,7 @@ CREATE TABLE tracks (
 );
 
 CREATE TABLE compilations (
-  compilation_id INT PRIMARY KEY,
+  compilation_id SERIAL PRIMARY KEY,
   compilation_name VARCHAR(255),
   release_year INT
 );
